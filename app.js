@@ -1,7 +1,7 @@
-const express =require('express');
+const express = require('express');
 const app = express();
-app.get('/',(req,res)=>{
-    const a = 123;
-    res.send('Hello world')
+app.get('/', (req, res) => {
+    let a = 1;
+    res.send(`Hello ! ${a}`)
 })
-app.listen(4000,()=>console.log('Example app Listening on port 3000!!'))
+app.listen(3000, () => console.log('Example app Listening on port 3000!!'))
